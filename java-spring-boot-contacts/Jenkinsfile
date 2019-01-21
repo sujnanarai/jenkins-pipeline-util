@@ -4,7 +4,7 @@ mavenDockerDeployTemplate(branch: 'release-docker', scmUrl: 'https://github.com/
 						projectPath: 'spring-boot-contacts/',
 						gitCredentialsId: 'GIT_CREDENTIAL', dockerCredentialsId: 'DOCKER_HUB_CRED',
 						dockerImageName: 'sujnanarai/spring-boot-contacts', dockerImageVersion:'1.0.2',
-						ec2CredentialsId: 'EC2_CREDENTIAL', ec2Host: 'ec2-user@13.233.106.21',
+						ec2CredentialsId: 'EC2_CREDENTIAL', ec2Host: 'ec2-user@13.233.197.36',
 						dockerPort: '8080', webPort: '8080',
-						isPostmanScripts: true,
+						isPostmanScripts: false,
 						toEmailList: 'sujnana.rai@mindtree.com; sujnanarai@gmail.com')
