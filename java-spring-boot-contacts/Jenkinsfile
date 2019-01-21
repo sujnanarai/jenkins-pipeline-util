@@ -6,4 +6,4 @@ mavenDockerDeployTemplate(branch: 'release-docker', scmUrl: 'https://github.com/
 						dockerImageName: 'sujnanarai/spring-boot-contacts', dockerImageVersion:'1.0.2',
 						ec2CredentialsId: 'EC2_CREDENTIAL', ec2Host: 'ec2-user@13.233.106.21',
 						dockerPort: '8080', webPort: '8080',
-						toEmailList: 'sujnana.rai@mindtree.com')
+						toEmailList: 'sujnana.rai@mindtree.com; sujnanarai@gmail.com')
