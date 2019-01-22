@@ -1,7 +1,4 @@
-node {
-@Library('java-jenkins-shared-lib') _
-sh 'ls'
-sh 'pwd'
+
 mavenDockerDeployTemplate(branch: 'release-docker', scmUrl: 'https://github.com/sujnanarai/java-spring-boot-contacts.git',
 						projectPath: 'spring-boot-contacts/',
 						gitCredentialsId: 'GIT_CREDENTIAL', dockerCredentialsId: 'DOCKER_HUB_CRED',
@@ -10,4 +7,3 @@ mavenDockerDeployTemplate(branch: 'release-docker', scmUrl: 'https://github.com/
 						dockerPort: '8080', webPort: '8080',
 						isPostmanScripts: true,
 						toEmailList: 'sujnana.rai@mindtree.com; sujnanarai@gmail.com')
-}
