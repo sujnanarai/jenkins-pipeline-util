@@ -1,4 +1,4 @@
-
+node {
 @Library('java-jenkins-shared-lib') _
 sh 'ls'
 sh 'pwd'
@@ -10,3 +10,4 @@ mavenDockerDeployTemplate(branch: 'release-docker', scmUrl: 'https://github.com/
 						dockerPort: '8080', webPort: '8080',
 						isPostmanScripts: true,
 						toEmailList: 'sujnana.rai@mindtree.com; sujnanarai@gmail.com')
+}
