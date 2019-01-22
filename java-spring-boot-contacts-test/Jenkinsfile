@@ -3,7 +3,7 @@ node {
   
 @Library('java-jenkins-shared-lib') _
 
-def props = readProperties  file: 'java-spring-boot-contacts/build.properties'
+def props = readProperties  file: 'java-spring-boot-contacts-test/build.properties'
 print props['pom.path']
 /*
 mavenDockerDeployTemplate(branch: 'release-docker', scmUrl: 'https://github.com/sujnanarai/java-spring-boot-contacts.git',
