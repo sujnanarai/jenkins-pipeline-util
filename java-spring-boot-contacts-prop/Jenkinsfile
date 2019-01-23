@@ -1,7 +1,8 @@
 
 @Library('java-jenkins-shared-lib') _
 mavenDockerPropDeployTemplate(propBranch: 'master', scmPropUrl: 'https://github.com/sujnanarai/jenkins-pipeline-util.git',						
-						gitCredentialsId: 'GIT_CREDENTIAL')
+						gitCredentialsId: 'GIT_CREDENTIAL',
+						propertyFile: 'java-spring-boot-contacts-prop/build.properties')
 
     
 
