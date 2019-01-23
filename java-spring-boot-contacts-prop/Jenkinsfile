@@ -1,6 +1,6 @@
 
 @Library('java-jenkins-shared-lib') _
-mavenDockerPropDeployTemplate(branch: 'master', scmUrl: 'https://github.com/sujnanarai/jenkins-pipeline-util.git',						
+mavenDockerPropDeployTemplate(propBranch: 'master', scmPropUrl: 'https://github.com/sujnanarai/jenkins-pipeline-util.git',						
 						gitCredentialsId: 'GIT_CREDENTIAL')
 
     
