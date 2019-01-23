@@ -1,17 +1,8 @@
-pipeline {
-    agent any
-	options { timestamps () }
-	stages {
-		stage ("Initialization") {
-			steps {
-				script {
+node {
 					sh 'pwd'
 					sh 'ls'
-				}
-			}
-		}
+			
 	}	
     
-}
 
 
