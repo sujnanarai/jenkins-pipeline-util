@@ -1,6 +1,8 @@
 node {
-					sh 'pwd'
-					sh 'ls'
+		sh 'pwd'
+		sh 'ls'
+		def props = readProperties  file: 'java-spring-boot-contacts-prop/build.properties'
+		print prop['pom.path']
 			
 	}	
     
