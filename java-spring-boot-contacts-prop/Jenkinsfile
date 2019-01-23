@@ -2,7 +2,7 @@ pipeline {
     agent any
 	options { timestamps () }
 	stages {
-		stage {
+		stage ("Initialization") {
 			steps {
 				script {
 					@Library('java-jenkins-shared-lib') _	
