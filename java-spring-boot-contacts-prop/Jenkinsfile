@@ -3,6 +3,7 @@ node {
 		sh 'ls'
 		def props = readProperties  file: 'java-spring-boot-contacts-prop/build.properties'
 		print props['pom.path']
+		/*
 		@Library('java-jenkins-shared-lib') _
 
 		mavenDockerDeployTemplate(branch: props['app.git.branch'], scmUrl: props['app.git.url'],
@@ -12,7 +13,7 @@ node {
 						ec2CredentialsId: props['aws.ec2.credential.id'], ec2Host: props['aws.ec2.host'], ec2UserId: props['aws.ec2.user'],
 						dockerPort: props['docker.app.port'], webPort: props['docker.web.port'],
 						isPostmanScripts: props['test.execute.postman.scripts'],
-						toEmailList: props['build.to.emails'])
+						toEmailList: props['build.to.emails'])*/
 
 			
 }	
