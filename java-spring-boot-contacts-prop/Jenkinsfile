@@ -1,22 +1,8 @@
-node {
-		sh 'pwd'
-		sh 'ls'
-		def props = readProperties  file: 'java-spring-boot-contacts-prop/build.properties'
-		print props['pom.path']
-		/*
-		@Library('java-jenkins-shared-lib') _
 
-		mavenDockerDeployTemplate(branch: props['app.git.branch'], scmUrl: props['app.git.url'],
-						projectPath: props['pom.path'],
-						gitCredentialsId: props['git.credential.id'], dockerCredentialsId: props['docker.redentials.id'],
-						dockerImageName: props['docker.image.name'], dockerImageVersion: props['docker.image.version'],
-						ec2CredentialsId: props['aws.ec2.credential.id'], ec2Host: props['aws.ec2.host'], ec2UserId: props['aws.ec2.user'],
-						dockerPort: props['docker.app.port'], webPort: props['docker.web.port'],
-						isPostmanScripts: props['test.execute.postman.scripts'],
-						toEmailList: props['build.to.emails'])*/
+@Library('java-jenkins-shared-lib') _
+mavenDockerDeployTemplate(branch: 'master', scmUrl: 'https://github.com/sujnanarai/jenkins-pipeline-util.git',						
+						gitCredentialsId: 'GIT_CREDENTIAL')
 
-			
-}	
     
 
 
