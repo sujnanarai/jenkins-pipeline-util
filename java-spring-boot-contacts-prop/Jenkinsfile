@@ -5,17 +5,17 @@ node {
 		print props['pom.path']
 		@Library('java-jenkins-shared-lib') _
 
-		mavenDockerDeployTemplate(branch: 'release-docker', scmUrl: 'https://github.com/sujnanarai/java-spring-boot-contacts.git',
+		mavenDockerDeployTemplate(branch: props['app.git.branch'], scmUrl: props['app.git.url'],
 						projectPath: props['pom.path'],
-						gitCredentialsId: 'GIT_CREDENTIAL', dockerCredentialsId: 'DOCKER_HUB_CRED',
-						dockerImageName: 'sujnanarai/spring-boot-contacts', dockerImageVersion:'1.0.2',
-						ec2CredentialsId: 'EC2_CREDENTIAL', ec2Host: '35.154.145.92', ec2UserId: 'ec2-user',
-						dockerPort: '8080', webPort: '8080',
-						isPostmanScripts: true,
-						toEmailList: 'sujnana.rai@mindtree.com; sujnanarai@gmail.com')
+						gitCredentialsId: props['git.credential.id'], dockerCredentialsId: props['docker.redentials.id'],
+						dockerImageName: props['docker.image.name'], dockerImageVersion: props['docker.image.version'],
+						ec2CredentialsId: props['aws.ec2.credential.id'], ec2Host: props['aws.ec2.host'], ec2UserId: props['aws.ec2.user'],
+						dockerPort: props['docker.app.port'], webPort: props['docker.web.port'],
+						isPostmanScripts: props['test.execute.postman.scripts'],
+						toEmailList: props['build.to.emails'])
 
 			
-	}	
+}	
     
 
 
