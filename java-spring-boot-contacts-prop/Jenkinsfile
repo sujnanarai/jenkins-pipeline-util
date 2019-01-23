@@ -7,7 +7,7 @@ pipeline {
 						projectPath: 'spring-boot-contacts/',
 						gitCredentialsId: 'GIT_CREDENTIAL', dockerCredentialsId: 'DOCKER_HUB_CRED',
 						dockerImageName: 'sujnanarai/spring-boot-contacts', dockerImageVersion:'1.0.2',
-						ec2CredentialsId: 'EC2_CREDENTIAL', ec2Host: '35.154.145.92', ec2UserId: 'ec2-user',
+						ec2CredentialsId: 'EC2_CREDENTIAL', ec2Host: '13.127.220.181', ec2UserId: 'ec2-user',
 						dockerPort: '8080', webPort: '8080',
 						isPostmanScripts: true,
 						toEmailList: 'sujnana.rai@mindtree.com; sujnanarai@gmail.com')
